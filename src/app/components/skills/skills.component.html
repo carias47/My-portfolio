@@ -1,0 +1,21 @@
+<div>
+  <h3>Skills</h3>
+  <div class="row" id="skills">
+    <div class="col-12 text-center mt-3">
+      <div class="col-lg-11 col-12" style="margin: auto">
+        <div class="d-inline-block m-lg-4 m-2" *ngFor="let skill of skills">
+          <div class="card bg-success bg-opacity-10">
+            <div class="card-body">
+              <img
+                class="card-img-top mb-2 rounded"
+                [src]="skill.img"
+                title="{{ skill.name }}"
+              />
+              <p class="card-title text-center">{{ skill.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
