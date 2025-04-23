@@ -9,7 +9,39 @@ export interface Projects {
 
 export const Projects: Projects[] = [
     {
-        titulo: 'Cripto Api',
+        titulo: 'Clean Now',
+        descripcion:
+            'App que conecta clientes con auxiliares de limpieza para hogares y oficinas más rápido y now.',
+        imagen: '../assets/clean-now.jpg',
+        urlRepository: 'https://github.com/carias47/CleanNowApp',
+        urlProject: 'https://clean-now.vercel.app',
+        skills: [
+            {
+                skill: 'Angular',
+            },
+            {
+                skill: '.NET Core',
+            },
+            {
+                skill: 'Entity Framework',
+            },
+            {
+                skill: 'SQL Server',
+            },
+            {
+                skill: 'JWT',
+            },
+            {
+                skill: 'Manejo de usuarios y roles',
+            },
+            {
+                skill: 'Arquitectura en capas con .NET',
+            },
+
+        ],
+    },
+    {
+        titulo: 'Counter Api',
         descripcion:
             'Backend desarrollado en NestJS y MySQL para un videojuego con autenticación, estadísticas y trazabilidad de acciones',
         imagen: '../assets/counter.png',
@@ -118,7 +150,7 @@ export const Projects: Projects[] = [
         ],
     },
     {
-        titulo: 'Poke Api',
+        titulo: 'Pokexd',
         descripcion:
             'Es una aplicación donde muestra todos los pokemones de las distintas generaciones, también se puede buscar por nombre del pokemon y ver información como caracteristicas, estadisticas y más.',
         imagen: '../assets/poke-api.JPG',
