@@ -1,81 +1,49 @@
 <div id="contact"></div>
-<h3>Contact me</h3>
+<h3>Contáctame 😉</h3>
 
-<form
-  [formGroup]="myForm"
-  (ngSubmit)="enviarCorreo()"
-  autocomplete="off"
-  class="form-floating mt-4"
->
+<form [formGroup]="myForm" (ngSubmit)="enviarCorreo()" autocomplete="off" class="form-floating mt-4">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
       <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control bg-success text-white bg-opacity-10"
-          formControlName="name"
-          placeholder="ingrese name"
-        />
+        <input type="email" class="form-control bg-success text-white bg-opacity-10" formControlName="name"
+          placeholder="ingrese name" />
         <label for="floatingPassword" class="text-white">Name*</label>
         <span *ngIf="isNotValidField('name')" class="form-text text-danger">{{
           getFieldError("name")
-        }}</span>
+          }}</span>
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
       <div class="form-floating mb-3">
-        <input
-          type="email"
-          class="form-control bg-success text-white bg-opacity-10"
-          formControlName="email"
-          placeholder="ingrese email"
-        />
+        <input type="email" class="form-control bg-success text-white bg-opacity-10" formControlName="email"
+          placeholder="ingrese email" />
         <label for="floatingInput" class="text-white">Email address*</label>
-        <span *ngIf="isNotValidField('email')" class="form-text text-danger"
-          >Enter a valid email address</span
-        >
+        <span *ngIf="isNotValidField('email')" class="form-text text-danger">Enter a valid email address</span>
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
       <div class="form-floating mb-3">
-        <input
-          type="number"
-          class="form-control bg-success text-white bg-opacity-10"
-          formControlName="phone"
-          min="0"
-          placeholder="phone"
-        />
+        <input type="number" class="form-control bg-success text-white bg-opacity-10" formControlName="phone" min="0"
+          placeholder="phone" />
         <label for="floatingInput" class="text-white">Phone</label>
       </div>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-12">
       <div class="form-floating mb-3">
-        <input
-          type="text"
-          class="form-control bg-success text-white bg-opacity-10"
-          formControlName="affair"
-          placeholder="affair"
-        />
+        <input type="text" class="form-control bg-success text-white bg-opacity-10" formControlName="affair"
+          placeholder="affair" />
         <label for="floatingInput" class="text-white">Affair*</label>
         <span *ngIf="isNotValidField('affair')" class="form-text text-danger">{{
           getFieldError("affair")
-        }}</span>
+          }}</span>
       </div>
     </div>
     <div class="col-12">
       <div class="form-floating">
-        <textarea
-          class="form-control bg-success text-white bg-opacity-10"
-          placeholder="Leave a comment here"
-          formControlName="comment"
-          style="height: 100px"
-        ></textarea>
+        <textarea class="form-control bg-success text-white bg-opacity-10" placeholder="Leave a comment here"
+          formControlName="comment" style="height: 100px"></textarea>
         <label for="floatingTextarea2" class="text-white">Comments*</label>
-        <span
-          *ngIf="isNotValidField('comment')"
-          class="form-text text-danger"
-          >{{ getFieldError("comment") }}</span
-        >
+        <span *ngIf="isNotValidField('comment')" class="form-text text-danger">{{ getFieldError("comment") }}</span>
       </div>
     </div>
   </div>

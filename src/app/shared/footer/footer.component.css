@@ -1,0 +1,41 @@
+.footer {
+  background-color: rgba(255, 255, 255, 0.02); 
+  backdrop-filter: blur(2px);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #dac5a7;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+
+.footer .logo-footer {
+  height: 54px; 
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 6px rgba(204, 235, 32, 0.164));
+  opacity: 0.95;
+}
+
+.footer .logo-footer:hover {
+  transform: scale(1.05);
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  opacity: 0.85;
+}
+
+.footer a {
+  color: #dac5a7;
+  font-size: 1.2rem;
+  margin: 0 0.6rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #acff4da2;
+}

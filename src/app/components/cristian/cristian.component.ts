@@ -6,18 +6,21 @@ declare var particlesJS: any;
   selector: 'app-cristian',
   templateUrl: './cristian.component.html',
   styleUrls: ['./cristian.component.css'],
+  standalone: false
 })
 export class CristianComponent {
+  private typed: Typed | undefined;
+
   ngOnInit() {
-    const typed = new Typed('.auto-type', {
-      strings: ['Ingeniero de sistemas', 'Frontend developer'],
+    this.typed = new Typed('.auto-type', {
+      strings: ['Ingeniero de sistemas', 'Fullstack developer', 'Web designer'],
       typeSpeed: 60,
       backSpeed: 20,
       backDelay: 2200,
       fadeOut: true,
       loop: true,
-      loopCount: 3,
     });
     particlesJS.load('particles-js', 'assets/particlesjs-config.json');
   }
+
 }

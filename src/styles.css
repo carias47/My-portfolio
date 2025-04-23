@@ -1,3 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+
+html, body { height: 100%;  scroll-behavior: smooth; scroll-padding-top: 80px;}
+body { margin: 0; font-family: 'Orbitron', sans-serif; font-size: 20px; color: #dac5a7;   background-color: #1e1e2f63 !important; /* Usa el color que quieras */
+}

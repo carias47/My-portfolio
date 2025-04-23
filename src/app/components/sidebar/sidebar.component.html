@@ -1,24 +1,15 @@
 <div id="particles-js"></div>
-<div id="sidebar" class="text-center d-flex justify-content-center align-items-center">
-  <app-nav></app-nav>
-</div>
+<app-nav></app-nav>
 
-<div id="content">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse text-center" id="navbarColor01">
-      <app-nav></app-nav>
-    </div>
-  </nav>
-
-  <div class="container animate__animated animate__fadeIn">
-    <div id="cristian"><app-cristian></app-cristian></div>
-    <div id="about" class="pt-4"><app-about></app-about></div>
-    <div id="skills" class="pt-4"><app-skills></app-skills></div>
-    <div id="projects" class="pt-4"><app-portfolio></app-portfolio></div>
-    <div id="contact" class="pb-4"><app-contact></app-contact></div>
+<main class="main-content">
+  <div class="container animate__animated animate__fadeIn text-center">
+    <div id="cristian" class="py-5"><app-cristian></app-cristian></div>
+    <div id="about" class="py-5"><app-about></app-about></div>
+    <div id="skills" class="py-5"><app-skills></app-skills></div>
+    <div id="projects" class="py-5"><app-portfolio></app-portfolio></div>
+    <div id="contact" class="py-5"><app-contact></app-contact></div>
   </div>
-</div>
+</main>
+
+
+<app-footer></app-footer>

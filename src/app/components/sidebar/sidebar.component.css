@@ -1,52 +1,9 @@
-a{
-    font-size: 20px;
-}
-
 #particles-js{
     position: fixed;
     height: 100vh;
     top: 0;
     z-index: -1;
 }
-
-#sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 250px;
-  padding: 20px;
-  background-color: rgb(48 48 48);
-  transition: all 0.3s;
-}
-
-#content {
-  margin-left: 250px;
-  transition: all 0.3s;
-}
-#content nav{
-  display: none;
-}
-
-#sidebarToggle {
-  display: none;
-}
-
-@media (max-width: 985px) {
-  #sidebar {
-    transform: translateX(-100%);
+.main-content {
+    padding-top: 120px; /* o el valor necesario para que no se monte */
   }
-
-  #content {
-    margin-left: 0;
-  }
-
- .container{
- max-width: 880px;
- }
-
-  #content nav{
-    padding: 20px;
-    display: block;
-  }
-}

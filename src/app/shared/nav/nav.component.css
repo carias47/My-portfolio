@@ -1,6 +1,44 @@
 .nav-link{
-    color: white;
+  color: #dac5a7;
 }
-  .nav-link:hover {
-  color: #00bc8c;
+
+.nav-logo{
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 6px rgba(225, 226, 220, 0.685));
+  opacity: 0.95;
 }
+.nav-link:hover {
+color: #acff4da2;
+}
+.nav img {
+height: 50px; /* Ajusta el tamaño según tu preferencia */
+width: auto; /* Mantiene la proporción original */
+padding-left: 15px;
+}
+.nav a {
+font-size: 18px;
+padding: 15px;
+}
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.692);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+}
+
+.custom-navbar{ 
+  display: flex;
+  border-color: rgb(52, 51, 48);
+  background-color: rgba(218, 197, 167, 0.05);
+  backdrop-filter: blur(30px);
+  border-bottom-width: 1px;
+  opacity: 1;
+  padding: 15px 0px; /* Aumenta el espacio interno */
+  position: fixed;
+  z-index: 10;
+}
+
+

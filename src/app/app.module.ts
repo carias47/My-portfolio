@@ -12,6 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PreloaderComponent } from './shared/preloader/preloader.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { NavComponent } from './shared/nav/nav.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +25,10 @@ import { NavComponent } from './shared/nav/nav.component';
     PreloaderComponent,
     PortfolioComponent,
     NavComponent,
+
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, FooterComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

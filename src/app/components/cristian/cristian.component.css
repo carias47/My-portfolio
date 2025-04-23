@@ -16,51 +16,10 @@ p{
 #presentation{
     display: flex;
     align-items: center;
-    min-height: 100vh;
+   
  }
 
-.home{
-    position: absolute;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
 
-}
-.home a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: .2rem solid rgb(118, 191, 251);
-    border-radius: 50%;
-    font-size: 25px;
-    color: rgb(118, 191, 251);
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
-}
-
-.home a:hover{
-    color: rgb(12, 12, 12);
-}
-
-.home a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: rgb(118, 191, 251);
-    z-index: -1;
-    transition: .5s;
-}
-.home a:hover::before{
-    width: 100%;
-}
 img {
     opacity: 70%;
     width:350px;

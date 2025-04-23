@@ -4,9 +4,10 @@ import * as Notiflix from 'notiflix';
 import { EmailjsService } from 'src/app/services/emailjs.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    standalone: false
 })
 export class ContactComponent {
   public myForm: FormGroup = this.fb.group({

@@ -1,64 +1,41 @@
 import { Component } from '@angular/core';
+import { Skills, SKILLS } from 'src/app/data/skills';
 
-export interface Skills {
-  img: string;
-  name: string;
-}
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css'],
+  standalone: false
 })
 export class SkillsComponent {
-  skills: Array<Skills> = [
+  skills: Skills[] = [];
+  certifications = [
     {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/2048px-HTML5_Badge.svg.png',
-      name: 'Html',
+      title: 'Angular Expert',
+      issuer: 'Udemy',
+      date: 'March 2023',
+      link: 'https://www.linkedin.com/feed/update/urn:li:activity:7065451255237636096/',
+      image: 'https://media.licdn.com/dms/image/v2/D4E22AQEiMvW4Ae7TCQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1684534847475?e=1747267200&v=beta&t=7asGVeL0_Lo1pk_h7FX9GMr9AVwKgi1bC5cU0yExV8I'
     },
     {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png',
-      name: 'Css',
+      title: 'Programming level 0',
+      issuer: 'Egg',
+      date: 'March 23',
+      link: 'https://www.linkedin.com/feed/update/urn:li:activity:7046269524114857984/',
+      image: 'https://media.licdn.com/dms/image/v2/D4E22AQHFk2ZSIUKNPg/feedshare-shrink_800/feedshare-shrink_800/0/1679961567267?e=1747267200&v=beta&t=DcCM25PnJsYvneY62foYpaJCVTVfFYto3vgmF-NfuUQ'
     },
     {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png',
-      name: 'Angular',
-    },
-    {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
-      name: 'JavaScript',
-    },
-    {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png',
-      name: 'TypeScript',
-    },
-    {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png',
-      name: 'GitHub',
-    },
-    {
-      img: 'https://ih1.redbubble.net/image.367014218.4385/pp,840x830-pad,1000x1000,f8f8f8.u2.jpg',
-      name: 'Node js',
-    },
-    {
-      img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/NestJS.svg/1200px-NestJS.svg.png',
-      name: 'Nestjs',
-    },
-    {
-      img: 'https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png',
-      name: 'Docker',
-    },
-    {
-      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXZPIWevT2KaAZdQ8UqoEHMPAxBRdgwOn9nhk_0PJNLx3Yfwcf17MnE1vKlHa_nXLNWmE&usqp=CAU',
-      name: 'Mongo DB',
-    },
-    {
-      img: 'https://1000marcas.net/wp-content/uploads/2021/06/Django-Logo.png',
-      name: 'Django',
-    },
-    {
-      img: 'https://cdn.freebiesupply.com/logos/large/2x/mysql-logo-png-transparent.png',
-      name: 'Mysql',
-    },
+      title: 'React Avanzado',
+      issuer: 'Udemy',
+      date: 'Enero 2024',
+      link: 'https://www.efset.org/cert/2j4v3g',
+      image: 'https://media.licdn.com/dms/image/v2/D4E22AQHFk2ZSIUKNPg/feedshare-shrink_800/feedshare-shrink_800/0/1679961567267?e=1747267200&v=beta&t=DcCM25PnJsYvneY62foYpaJCVTVfFYto3vgmF-NfuUQ'
+    }
   ];
+
+  ngOnInit() {
+    this.skills = SKILLS;
+  }
+
 }

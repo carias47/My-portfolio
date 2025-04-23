@@ -1,20 +1,35 @@
-<div>
+<div class="size">
   <h3>Skills</h3>
   <div class="row" id="skills">
-    <div class="col-12 text-center mt-3">
+    <div class="col-12 text-center">
       <div class="col-lg-11 col-12" style="margin: auto">
         <div class="d-inline-block m-lg-4 m-2" *ngFor="let skill of skills">
-          <div class="card bg-success bg-opacity-10">
+          <div class="card ">
             <div class="card-body">
-              <img
-                class="card-img-top mb-2 rounded"
-                [src]="skill.img"
-                title="{{ skill.name }}"
-              />
+              <img class="card-img-top mb-2 rounded" [src]="skill.img" title="{{ skill.name }}" />
               <p class="card-title text-center">{{ skill.name }}</p>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Certifications Section -->
+<h3 id="cetifieds" class="py-5 section-title">Certificados</h3>
+
+<div class="row justify-content-center gx-4 gy-4" id="certifications">
+  <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let cert of certifications">
+    <div class="card certification-card-dark text-start custom-text mx-auto">
+      <img *ngIf="cert.image" [src]="cert.image" alt="Certificado {{ cert.title }}" class="certificate-thumbnail" />
+      <div class="card-body">
+        <h5 class="card-title fw-bold">{{ cert.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ cert.issuer }}</h6>
+        <p class="card-text"><small class="text-primary">{{ cert.date }}</small></p>
+        <a [href]="cert.link" target="_blank" class="btn btn-sm btn-glow">
+          Ver certificado
+        </a>
       </div>
     </div>
   </div>
