@@ -4,12 +4,12 @@ import { sidebarComponent } from './components/sidebar/sidebar.component';
 
 const routes: Routes = [
   {
-    path: 'portfolio/',
+    path: 'portfolio',
     component: sidebarComponent,
   },
   {
     path: '**',
-    redirectTo: 'portfolio/',
+    redirectTo: 'portfolio',
   },
 ];
 

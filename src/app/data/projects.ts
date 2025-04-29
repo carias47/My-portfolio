@@ -41,6 +41,32 @@ export const Projects: Projects[] = [
         ],
     },
     {
+        titulo: 'Portafolio',
+        descripcion:
+            'Portafolio web con renderizado del lado del servidor (SSR) que muestra mis proyectos, habilidades y experiencia en el desarrollo de aplicaciones modernas',
+        imagen: '../assets/portfolio.png',
+        urlRepository: 'https://github.com/carias47/My-portfolio',
+        urlProject: 'https://portfolio-crisdev.vercel.app',
+        skills: [
+            {
+                skill: 'Angular',
+            },
+            {
+                skill: 'SSR',
+            },
+            {
+                skill: 'Optimización web',
+            },
+            {
+                skill: 'Responsive Design',
+            },
+            {
+                skill: 'Bootstrap'
+            }
+
+        ],
+    },
+    {
         titulo: 'Counter Api',
         descripcion:
             'Backend desarrollado en NestJS y MySQL para un videojuego con autenticación, estadísticas y trazabilidad de acciones',
